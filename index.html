@@ -3,7 +3,7 @@
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ระบบตรวจสอบอุปกรณ์รถ Emergency 7/4</title>
+  <title>ระบบตรวจสอบอุปกรณ์รถ Emergency</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="/_sdk/element_sdk.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -35,19 +35,14 @@
        </svg>
       </div>
       <div>
-            <h1 id="app-title" class="text-lg xs:text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 leading-tight">
-         ระบบตรวจสอบยาและเวชภัณฑ์รถ Emergency 7/4
-       </h1>
-       <div class="flex flex-col xs:flex-row xs:items-center gap-1 xs:gap-2">
-         <span class="text-xs sm:text-sm text-gray-500">
-           กลุ่มการพยาบาล สถาบันบำราศนราดูร
-         </span>
-         <span id="status-text" class="text-xs sm:text-sm text-emerald-600 flex items-center gap-2">
-           <span id="status-indicator" class="inline-block w-2 h-2 rounded-full bg-emerald-500">กำลังเชื่อมต่อ...</span>
-         </span>
-       </div>
+       <h1 id="app-title" class="text-2xl sm:text-3xl font-bold text-gray-800">ระบบตรวจสอบยาและเวชภัณฑ์รถ Emergency</h1>
+       <p class="text-sm text-gray-500">กลุ่มการพยาบาล สถาบันบำราศนราดูร</p>
       </div>
      </div>
+     <div class="flex items-center gap-2">
+      <div id="status-indicator" class="w-2 h-2 rounded-full bg-gray-400"></div><span id="status-text" class="text-sm text-gray-600">กำลังเชื่อมต่อ...</span>
+     </div>
+    </div>
    </div><!-- Medicine Table -->
    <div class="bg-white rounded-2xl shadow-lg overflow-hidden mb-6">
     <div class="p-6 border-b border-gray-200">
@@ -59,15 +54,15 @@
     </div>
     <div class="p-6">
      <div class="overflow-x-auto">
-      <table class="w-full min-w-[410px] table-fixed text-xs sm:text-sm bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
-  <thead class="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white text-xs sm:text-sm">
-    <tr>
-      <th class="px-1 py-1 text-left font-semibold rounded-tl-2xl whitespace-nowrap">ยา/เวชภัณฑ์</th>
-      <th class="px-1 py-1 text-center font-semibold whitespace-nowrap">⏰ วันที่เหลือ</th>
-      <th class="px-1 py-1 text-center font-semibold whitespace-nowrap">🏷️ สถานะ</th>
-      <th class="px-1 py-1 text-center font-semibold rounded-tr-2xl whitespace-nowrap">⚙️ การจัดการ</th>
-    </tr>
-  </thead>
+      <table class="w-full bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+       <thead class="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white">
+        <tr>
+         <th class="px-6 py-3 text-left font-semibold rounded-tl-2xl">ยา/เวชภัณฑ์</th>
+         <th class="px-6 py-3 text-center font-semibold">⏰ วันที่เหลือ</th>
+         <th class="px-6 py-3 text-center font-semibold">🏷️ สถานะ</th>
+         <th class="px-6 py-3 text-center font-semibold rounded-tr-2xl">⚙️ การจัดการ</th>
+        </tr>
+       </thead>
        <tbody id="medicine-table-body" class="divide-y divide-gray-100"><!-- Items will be inserted here -->
        </tbody>
       </table>
@@ -100,27 +95,27 @@
      <div id="medicineChecklist" class="mb-4 md:mb-6 hidden">
       <h3 class="text-lg md:text-xl font-semibold text-emerald-800 mb-3 md:mb-4">รายการยา</h3>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4">
-       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">Adenosine (6 mg./vial) </label>
+       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">Adenosine (6 mg./vial) 3 amp</label>
         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="adenosine" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600"> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="adenosine" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600"> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
         </div>
        </div>
-       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">Adrenaline ( 1 : 1000 )</label>
+       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">Adrenaline ( 1 : 1000 ) 30 amp</label>
         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="adrenaline" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600"> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="adrenaline" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600"> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
         </div>
        </div>
-       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">Atropine (0.6 mg/amp.) </label>
+       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">Atropine (0.6 mg/amp.) 4 amp</label>
         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="atropine" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600"> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="atropine" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600"> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
         </div>
        </div>
-       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">Amiodarone </label>
+       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">Amiodarone 3 amp</label>
         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="amiodarone" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600"> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="amiodarone" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600"> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
         </div>
        </div>
-       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">Dopamine 250 mg/amp </label>
+       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">Dopamine 250 mg/amp (2 amp)</label>
         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="dopamine" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600"> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="dopamine" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600"> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
         </div>
        </div>
-       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">10% Calcium Gluconate (10 ml./amp.) </label>
+       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">10% Calcium Gluconate (10 ml./amp.) 3 amp</label>
         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="calcium_gluconate" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600"> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="calcium_gluconate" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600"> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
         </div>
        </div>
@@ -128,15 +123,15 @@
         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="nahco3" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600"> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="nahco3" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600"> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
         </div>
        </div>
-       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">50% Glucose (50 ml./vial) </label>
+       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">50% Glucose (50 ml./vial) 1 vial</label>
         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="glucose" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600"> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="glucose" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600"> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
         </div>
        </div>
-       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">50% MgSO4 (2 ml./amp) </label>
+       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">50% MgSO4 (2 ml./amp) 2 amp</label>
         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="mgso4" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600"> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="mgso4" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600"> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
         </div>
        </div>
-       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">Valium (10 mg./amp.) </label>
+       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">Valium (10 mg./amp.) 2 amp</label>
         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="valium" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600"> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="valium" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600"> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
         </div>
        </div>
@@ -329,26 +324,24 @@
       </div>
      </div>
     </div>
-    <!-- ตารางที่ปรับให้แถว/หัวตารางเตี้ยลง ฟอนต์เล็ก mobile-friendly และ Header Responsive -->
-<div class="p-3 sm:p-6">
-  <div class="overflow-x-auto">
-    <table class="w-full min-w-[430px] table-fixed text-xs sm:text-sm bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
-      <thead class="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white text-xs sm:text-sm">
+    <div class="p-6">
+     <div class="overflow-x-auto">
+      <table class="w-full bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+       <thead class="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white">
         <tr>
-          <th class="px-1 py-1 sm:px-2 sm:py-1 text-center font-semibold rounded-tl-2xl whitespace-nowrap">วันที่</th>
-          <th class="px-1 py-1 sm:px-2 sm:py-1 text-center font-semibold whitespace-nowrap">เวร</th>
-          <th class="px-1 py-1 sm:px-2 sm:py-1 text-center font-semibold whitespace-nowrap">ID</th>
-          <th class="px-1 py-1 sm:px-2 sm:py-1 text-center font-semibold whitespace-nowrap">ผู้ตรวจสอบ</th>
-          <th class="px-1 py-1 sm:px-2 sm:py-1 text-center font-semibold whitespace-nowrap">เซ็นต์ชื่อ</th>
-          <th class="px-1 py-1 sm:px-2 sm:py-1 text-center font-semibold rounded-tr-2xl whitespace-nowrap">จัดการ</th>
+         <th class="px-6 py-3 text-center font-semibold rounded-tl-2xl">วันที่</th>
+         <th class="px-6 py-3 text-center font-semibold">เวร</th>
+         <th class="px-6 py-3 text-center font-semibold">ID</th>
+         <th class="px-6 py-3 text-center font-semibold">ผู้ตรวจสอบ</th>
+         <th class="px-6 py-3 text-center font-semibold">เซ็นต์ชื่อ</th>
+         <th class="px-6 py-3 text-center font-semibold rounded-tr-2xl">จัดการ</th>
         </tr>
-      </thead>
-      <tbody id="inspection-table-body" class="divide-y divide-gray-100 text-xs sm:text-sm">
-        <!-- Inspection records will be inserted here -->
-      </tbody>
-    </table>
-  </div>
-</div>
+       </thead>
+       <tbody id="inspection-table-body" class="divide-y divide-gray-100"><!-- Inspection records will be inserted here -->
+       </tbody>
+      </table>
+     </div>
+    </div>
     <div id="inspection-empty-state" class="text-center py-12 text-gray-400 hidden">
      <svg class="w-16 h-16 mx-auto mb-4 opacity-50" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
      </svg>
