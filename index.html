@@ -1,10 +1,9 @@
-
 <!doctype html>
 <html lang="th">
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ระบบตรวจสอบอุปกรณ์รถ Emergency 7/3</title>
+  <title>ระบบตรวจสอบอุปกรณ์รถ Emergency</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="/_sdk/element_sdk.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -36,7 +35,7 @@
        </svg>
       </div>
       <div>
-       <h1 id="app-title" class="text-2xl sm:text-3xl font-bold text-gray-800">ระบบตรวจสอบยาและเวชภัณฑ์รถ Emergency 7/3</h1>
+       <h1 id="app-title" class="text-2xl sm:text-3xl font-bold text-gray-800">ระบบตรวจสอบยาและเวชภัณฑ์รถ Emergency</h1>
        <p class="text-sm text-gray-500">กลุ่มการพยาบาล สถาบันบำราศนราดูร</p>
       </div>
      </div>
@@ -96,44 +95,44 @@
      <div id="medicineChecklist" class="mb-4 md:mb-6 hidden">
       <h3 class="text-lg md:text-xl font-semibold text-emerald-800 mb-3 md:mb-4">รายการยา</h3>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4">
-       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">Adrenaline</label>
-        <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="adrenaline" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600"> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="adrenaline" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600"> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
-        </div>
-       </div>
-       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">Amiodarone</label>
-        <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="amiodarone" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600"> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="amiodarone" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600"> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
-        </div>
-       </div>
-       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">Atropine</label>
-        <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="atropine" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600"> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="atropine" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600"> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
-        </div>
-       </div>
-       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">Adenosine</label>
+       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">Adenosine (6 mg./vial) 3 amp</label>
         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="adenosine" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600"> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="adenosine" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600"> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
         </div>
        </div>
-       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">10% Calcium Gluconate</label>
+       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">Adrenaline ( 1 : 1000 ) 30 amp</label>
+        <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="adrenaline" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600"> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="adrenaline" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600"> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+        </div>
+       </div>
+       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">Atropine (0.6 mg/amp.) 4 amp</label>
+        <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="atropine" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600"> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="atropine" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600"> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+        </div>
+       </div>
+       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">Amiodarone 3 amp</label>
+        <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="amiodarone" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600"> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="amiodarone" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600"> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+        </div>
+       </div>
+       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">Dopamine 250 mg/amp (2 amp)</label>
+        <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="dopamine" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600"> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="dopamine" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600"> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+        </div>
+       </div>
+       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">10% Calcium Gluconate (10 ml./amp.) 3 amp</label>
         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="calcium_gluconate" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600"> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="calcium_gluconate" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600"> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
         </div>
        </div>
-       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">50% Glucose</label>
-        <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="glucose" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600"> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="glucose" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600"> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
-        </div>
-       </div>
-       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">50% MgSO4</label>
-        <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="mgso4" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600"> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="mgso4" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600"> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
-        </div>
-       </div>
-       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">7.5% NaHCO3</label>
+       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">7.5% NaHCO3 (50 ml./amp.) 2 amp</label>
         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="nahco3" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600"> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="nahco3" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600"> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
         </div>
        </div>
-       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">Valium</label>
-        <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="valium" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600"> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="valium" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600"> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">50% Glucose (50 ml./vial) 1 vial</label>
+        <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="glucose" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600"> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="glucose" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600"> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
         </div>
        </div>
-       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">Dopamine</label>
-        <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="Dopamine" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600"> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="Dopamine" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600"> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">50% MgSO4 (2 ml./amp) 2 amp</label>
+        <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="mgso4" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600"> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="mgso4" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600"> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+        </div>
+       </div>
+       <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">Valium (10 mg./amp.) 2 amp</label>
+        <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="valium" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600"> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="valium" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600"> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
         </div>
        </div>
       </div>
@@ -142,48 +141,95 @@
       <div class="bg-blue-50 p-4 rounded-xl">
        <h3 class="font-bold text-blue-800 mb-4 text-lg md:text-xl">ชั้นที่ 1</h3><!-- Equipment Section -->
        <div class="space-y-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-         <div><label for="syringe-count" class="block text-base md:text-lg font-semibold text-gray-700 mb-3">💉 Syringe Disposable ขนาดต่างๆ อย่างละ 3 <span class="text-red-500">*</span></label> <input type="number" id="syringe-count" min="0" required class="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-emerald-500 focus:outline-none transition-colors text-base md:text-lg">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+         <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">💉 Syringe Disposable ขนาดต่างๆ อย่างละ 3 <span class="text-red-500">*</span></label>
+          <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="syringe" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="syringe" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+          </div>
          </div>
-         <div><label for="needle-count" class="block text-base md:text-lg font-semibold text-gray-700 mb-3">🪡 เข็มฉีดยา เบอร์18-24 <span class="text-red-500">*</span></label> <input type="number" id="needle-count" min="0" required class="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-emerald-500 focus:outline-none transition-colors text-base md:text-lg">
+         <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">📏 Extension Tube 3 set <span class="text-red-500">*</span></label>
+          <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="extension_tube" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="extension_tube" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+          </div>
+         </div>
+         <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">🔗 Set IV 3 set <span class="text-red-500">*</span></label>
+          <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="iv_set" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="iv_set" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+          </div>
+         </div>
+         <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">🩸 IV Catheter No. 24, 22, 20, 18 อย่างละ 3 <span class="text-red-500">*</span></label>
+          <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="iv_catheter" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="iv_catheter" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+          </div>
+         </div>
+         <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">🪡 เข็มฉีดยา เบอร์18-24 อย่างละ 10 <span class="text-red-500">*</span></label>
+          <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="needle" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="needle" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+          </div>
+         </div>
+         <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">🔀 Three - way 3 อัน <span class="text-red-500">*</span></label>
+          <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="three_way" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="three_way" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+          </div>
+         </div>
+         <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">🔌 In jection plug 3 อัน <span class="text-red-500">*</span></label>
+          <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="injection_plug" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="injection_plug" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+          </div>
+         </div>
+         <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">💧 sterline water 5 <span class="text-red-500">*</span></label>
+          <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="sterile_water" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="sterile_water" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+          </div>
+         </div>
+         <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">🩹 Transpore 1 นิ้ว 2ม้วน <span class="text-red-500">*</span></label>
+          <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="transpore" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="transpore" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+          </div>
+         </div>
+         <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">🩹 พลาสเตอร์เหนียวติด Tube 10 เส้น <span class="text-red-500">*</span></label>
+          <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="plaster_tube" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="plaster_tube" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+          </div>
+         </div>
+         <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">✂️ กรรไกร 1 <span class="text-red-500">*</span></label>
+          <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="scissors" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="scissors" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+          </div>
+         </div>
+         <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">🎗️ Tourniquet 2 อัน <span class="text-red-500">*</span></label>
+          <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="tourniquet" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="tourniquet" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+          </div>
+         </div>
+         <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">🧴 สำลี Alcohol 5 อัน <span class="text-red-500">*</span></label>
+          <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="alcohol" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="alcohol" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+          </div>
+         </div>
+         <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">🪚 ใบเลื่อย 3 อัน <span class="text-red-500">*</span></label>
+          <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="saw_blade" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="saw_blade" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+          </div>
          </div>
         </div>
        </div>
       </div><!-- Floor 2 -->
       <div class="bg-green-50 p-4 rounded-xl">
        <h3 class="font-bold text-green-800 mb-4 text-lg md:text-xl">ชั้นที่ 2</h3>
-       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div><label for="iv-catheter-count" class="block text-base md:text-lg font-semibold text-gray-700 mb-3">🩸 IV Catheter No. 24, 22, 20, 18 อย่างละ 3 <span class="text-red-500">*</span></label> <input type="number" id="iv-catheter-count" min="0" required class="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-emerald-500 focus:outline-none transition-colors text-base md:text-lg">
-        </div>
-        <div><label for="nss-count" class="block text-base md:text-lg font-semibold text-gray-700 mb-3">💧 0.9% NSS (1,000 ml 1 ขวด) <span class="text-red-500">*</span></label> <input type="number" id="nss-count" min="0" required class="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-emerald-500 focus:outline-none transition-colors text-base md:text-lg">
-        </div>
-        <div><label for="iv-set-count" class="block text-base md:text-lg font-semibold text-gray-700 mb-3">🔗 Set IV 3 set <span class="text-red-500">*</span></label> <input type="number" id="iv-set-count" min="0" required class="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-emerald-500 focus:outline-none transition-colors text-base md:text-lg">
-        </div>
-        <div><label for="extension-tube-count" class="block text-base md:text-lg font-semibold text-gray-700 mb-3">📏 Extension Tube 3 set <span class="text-red-500">*</span></label> <input type="number" id="extension-tube-count" min="0" required class="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-emerald-500 focus:outline-none transition-colors text-base md:text-lg">
-        </div>
-        <div><label for="three-way-count" class="block text-base md:text-lg font-semibold text-gray-700 mb-3">🔀 Three-way 3 อัน <span class="text-red-500">*</span></label> <input type="number" id="three-way-count" min="0" required class="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-emerald-500 focus:outline-none transition-colors text-base md:text-lg">
-        </div>
-        <div><label for="transpore-count" class="block text-base md:text-lg font-semibold text-gray-700 mb-3">🩹 Transpore 1 นิ้ว 1ม้วน <span class="text-red-500">*</span></label> <input type="number" id="transpore-count" min="0" required class="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-emerald-500 focus:outline-none transition-colors text-base md:text-lg">
-        </div>
-        <div><label for="tourniquet-count" class="block text-base md:text-lg font-semibold text-gray-700 mb-3">🎗️ Tourniquet 2 อัน <span class="text-red-500">*</span></label> <input type="number" id="tourniquet-count" min="0" required class="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-emerald-500 focus:outline-none transition-colors text-base md:text-lg">
-        </div>
-        <div><label for="scissors-count" class="block text-base md:text-lg font-semibold text-gray-700 mb-3">✂️ กรรไกร 1 <span class="text-red-500">*</span></label> <input type="number" id="scissors-count" min="0" required class="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-emerald-500 focus:outline-none transition-colors text-base md:text-lg">
-        </div>
-       </div>
-       <div class="mt-4">
-        <h4 class="font-semibold text-gray-700 mb-3 text-base md:text-lg">🧤 อุปกรณ์เสริม</h4>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-         <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">ชามรูปไต, ไฟฉาย, แว่นตา อย่างละ 1 <span class="text-red-500">*</span></label>
-          <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="kidney_bowl" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="kidney_bowl" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
-          </div>
+       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">🔬 Laryngoscope + Blade (พร้อมถ่าน) 1 ชุด <span class="text-red-500">*</span></label>
+         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="laryngoscope" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="laryngoscope" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
          </div>
-         <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">ถุงมือ <span class="text-red-500">*</span></label>
-          <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="gloves" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="gloves" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
-          </div>
+        </div>
+        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">🔧 Magill Force(เด็ก/ผู้ใหญ่) (1,1) <span class="text-red-500">*</span></label>
+         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="magill_force" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="magill_force" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
          </div>
-         <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">Mask อย่างละ 5 อัน <span class="text-red-500">*</span></label>
-          <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="masks" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="masks" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
-          </div>
+        </div>
+        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">📏 Guide wire (เด็ก/เด็กโต/ผู้ใหญ่) (1,1,4) <span class="text-red-500">*</span></label>
+         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="guide_wire" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="guide_wire" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+         </div>
+        </div>
+        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">🧴 K-Y Jelly 1 <span class="text-red-500">*</span></label>
+         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="ky_jelly" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="ky_jelly" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+         </div>
+        </div>
+        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">🥣 ชามรูปไต 1 <span class="text-red-500">*</span></label>
+         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="kidney_bowl" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="kidney_bowl" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+         </div>
+        </div>
+        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">💧 0.9 % NSS (1,000 ml ,500 ml )(2 ,2) <span class="text-red-500">*</span></label>
+         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="nss" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="nss" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+         </div>
+        </div>
+        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">🍯 5% DW 100 ml 2 ขวด <span class="text-red-500">*</span></label>
+         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="d5w" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="d5w" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
          </div>
         </div>
        </div>
@@ -191,28 +237,16 @@
       <div class="bg-purple-50 p-4 rounded-xl">
        <h3 class="font-bold text-purple-800 mb-4 text-lg md:text-xl">ชั้นที่ 3</h3>
        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">ET-Tube No.3, 3.5, 4 อย่างละ 2,1,2 <span class="text-red-500">*</span></label>
-         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="et_tube_child" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="et_tube_child" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">🫁 ET-Tube No.3, 3.5, 4,4.5 อย่างละ 1 <span class="text-red-500">*</span></label>
+         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="et_tube_a" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="et_tube_a" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
          </div>
         </div>
-        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">Ambu bag + Mask เด็ก 1 ชุด <span class="text-red-500">*</span></label>
-         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="ambu_bag_child" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="ambu_bag_child" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">🫁 ET-Tube No.5, 5.5, 6,6.5,8.5 อย่างละ 1 <span class="text-red-500">*</span></label>
+         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="et_tube_b" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="et_tube_b" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
          </div>
         </div>
-        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">Oral Airway No 2,5,6 อย่างละ 1 <span class="text-red-500">*</span></label>
-         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="oral_airway_child" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="oral_airway_child" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
-         </div>
-        </div>
-        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">กระดานและปากกา 1 <span class="text-red-500">*</span></label>
-         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="clipboard" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="clipboard" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
-         </div>
-        </div>
-        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">CPR record <span class="text-red-500">*</span></label>
-         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="cpr_record" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="cpr_record" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
-         </div>
-        </div>
-        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">Stethoscope 1 <span class="text-red-500">*</span></label>
-         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="stethoscope" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="stethoscope" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">🫁 ET-Tube No.7, 7.5, 8 อย่างละ 2 <span class="text-red-500">*</span></label>
+         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="et_tube_c" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="et_tube_c" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
          </div>
         </div>
        </div>
@@ -220,44 +254,41 @@
       <div class="bg-orange-50 p-4 rounded-xl">
        <h3 class="font-bold text-orange-800 mb-4">ชั้นที่ 4</h3>
        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">ET-Tube No.6.5,7, 7.5, 8 อย่างละ 2 <span class="text-red-500">*</span></label>
-         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="et_tube_adult" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="et_tube_adult" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">🫁 Orol Airway No 4,5,6 อย่างละ 1 อัน <span class="text-red-500">*</span></label>
+         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="oral_airway_a" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="oral_airway_a" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
          </div>
         </div>
-        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">Laryngoscope + Blade (พร้อมถ่าน) <span class="text-red-500">*</span></label>
-         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="laryngoscope" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="laryngoscope" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">🫁 Orol Airway No 7,8,9,10 อย่างละ 3 อัน <span class="text-red-500">*</span></label>
+         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="oral_airway_b" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="oral_airway_b" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
          </div>
         </div>
-        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">Guide wire, Magill Forceps อย่างละ 1 <span class="text-red-500">*</span></label>
-         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="guide_wire" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="guide_wire" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">🔦 ไฟฉาย 1 <span class="text-red-500">*</span></label>
+         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="flashlight" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="flashlight" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
          </div>
         </div>
-        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">Oral Airway No 7,8,9 (2 อัน) <span class="text-red-500">*</span></label>
-         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="oral_airway_adult" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="oral_airway_adult" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">👓 แว่นตา 1 <span class="text-red-500">*</span></label>
+         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="glasses" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="glasses" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
          </div>
         </div>
-        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">K-Y Jelly 1 <span class="text-red-500">*</span></label>
-         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="ky_jelly" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="ky_jelly" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+       </div>
+      </div><!-- Floor 5 -->
+      <div class="bg-pink-50 p-4 rounded-xl">
+       <h3 class="font-bold text-pink-800 mb-4">ชั้นที่ 5</h3>
+       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">😷 Mask No 0,1,2,3 อย่างละ 1 <span class="text-red-500">*</span></label>
+         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="mask_a" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="mask_a" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
          </div>
         </div>
-        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">สาย Suction No 14,16 อย่างละ 1 <span class="text-red-500">*</span></label>
-         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="suction_catheter" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="suction_catheter" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">😷 Mask No 4,5 อย่างละ 2 <span class="text-red-500">*</span></label>
+         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="mask_b" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="mask_b" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
          </div>
         </div>
-        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">Ambu bag + Mask 1 ชุด <span class="text-red-500">*</span></label>
-         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="ambu_bag_adult" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="ambu_bag_adult" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
+        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">🫁 Ambu bag (เด็กเล็ก/เด็กโต/ผู้ใหญ่) อย่างละ 1 ชุด <span class="text-red-500">*</span></label>
+         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="ambu_bag" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="ambu_bag" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
          </div>
         </div>
-        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">O2 Mask c bag, O2 canular อย่างละ 1 <span class="text-red-500">*</span></label>
-         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="o2_mask" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="o2_mask" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
-         </div>
-        </div>
-        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">สายต่อออกซิเจน 1 เส้น <span class="text-red-500">*</span></label>
+        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">🫁 สายต่อออกซิเจน 1 เส้น <span class="text-red-500">*</span></label>
          <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="o2_tube" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="o2_tube" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
-         </div>
-        </div>
-        <div class="p-4 bg-white rounded-lg border"><label class="block text-base md:text-lg font-medium text-gray-700 mb-3">พลาสเตอร์เหนียวติด Tube <span class="text-red-500">*</span></label>
-         <div class="flex justify-between"><label class="flex items-center space-x-2"> <input type="radio" name="plaster" value="✓" class="w-4 h-4 md:w-5 md:h-5 text-emerald-600" required> <span class="text-green-600 text-base md:text-lg">✓</span> </label> <label class="flex items-center space-x-2"> <input type="radio" name="plaster" value="✗" class="w-4 h-4 md:w-5 md:h-5 text-red-600" required> <span class="text-red-600 text-base md:text-lg">✗</span> </label>
          </div>
         </div>
        </div>
@@ -269,9 +300,9 @@
          <div class="flex items-center justify-between mb-3"><label for="inspector" class="block text-base md:text-lg font-semibold text-gray-700">ผู้ตรวจสอบ <span class="text-red-500">*</span></label> <button type="button" id="manage-inspectors-btn" class="text-sm md:text-base bg-blue-500 hover:bg-blue-600 text-white px-3 py-2 rounded-lg transition-colors"> จัดการรายชื่อ </button>
          </div><select id="inspector" class="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-emerald-500 focus:outline-none transition-colors text-base md:text-lg" required> <option value="">เลือกผู้ตรวจสอบ</option> <!-- Options will be loaded from Name sheet --> </select>
         </div>
-        <div><label for="signature" class="block text-base md:text-lg font-semibold text-gray-700 mb-3">ลายเซ็น <span class="text-red-500">*</span></label>
+        <div><label for="signature" class="block text-base md:text-lg font-semibold text-gray-700 mb-3">เซ็นต์ชื่อ <span class="text-red-500">*</span></label>
          <canvas id="signature-pad" class="w-full h-28 md:h-32 border-2 border-gray-200 rounded-xl bg-white cursor-crosshair" required></canvas>
-         <div class="flex gap-2 mt-2"><button type="button" id="clear-signature" class="text-sm md:text-base bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-lg">ล้างลายเซ็น</button>
+         <div class="flex gap-2 mt-2"><button type="button" id="clear-signature" class="text-sm md:text-base bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-lg">ล้างเซ็นต์ชื่อ</button>
          </div>
         </div>
        </div>
@@ -302,7 +333,7 @@
          <th class="px-6 py-3 text-center font-semibold">เวร</th>
          <th class="px-6 py-3 text-center font-semibold">ID</th>
          <th class="px-6 py-3 text-center font-semibold">ผู้ตรวจสอบ</th>
-         <th class="px-6 py-3 text-center font-semibold">ลายเซ็น</th>
+         <th class="px-6 py-3 text-center font-semibold">เซ็นต์ชื่อ</th>
          <th class="px-6 py-3 text-center font-semibold rounded-tr-2xl">จัดการ</th>
         </tr>
        </thead>
@@ -390,10 +421,10 @@
    </div>
   </div>
   <script>
-    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwiyGUkhGwfa64FvP_4DSc_DYd89x1m96zaAp0sAhZJGwS1M3QyLLSzc7uCW1fsq4A/exec';
-    const INSPECTION_SHEET_URL = 'https://script.google.com/macros/s/AKfycbwiyGUkhGwfa64FvP_4DSc_DYd89x1m96zaAp0sAhZJGwS1M3QyLLSzc7uCW1fsq4A/exec';
-    const SPREADSHEET_ID = '1CVb5NUg4TT-eTM1iQ38uYR0eUHojTQZ59hh_sqVXlZI';
-    const SIGNATURE_FOLDER_ID = '1acRWTICmz9-kiWhINxlp8Z6oC6wTth6Z';
+    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwcJa3-8g1JapmSeLrzEV96eXuu8eW-JtodLbe_r5jVi2Z1-WfhMWI1SXQOGlqNJS5qhg/exec';
+    const INSPECTION_SHEET_URL = 'https://script.google.com/macros/s/AKfycbwcJa3-8g1JapmSeLrzEV96eXuu8eW-JtodLbe_r5jVi2Z1-WfhMWI1SXQOGlqNJS5qhg/exec';
+    const SPREADSHEET_ID = '1m4ARbtRMpShcbQXtzTTG-rPYSy_Tj0djyItwG5pIgDo';
+    const SIGNATURE_FOLDER_ID = '1ppfoFOfuZCZwnJGt1Jwn14c_v0B69DIn';
     
     const defaultConfig = {
       app_title: 'ระบบตรวจสอบยาและเวชภัณฑ์รถ Emergency',
@@ -1298,44 +1329,20 @@
       if (!formData.inspector) requiredFields.push('ผู้ตรวจสอบ');
       if (!formData.signature) requiredFields.push('ลายเซ็น');
       
-      // ตรวจสอบจำนวนอุปกรณ์ที่บังคับ (คอลัมน์ O-AU)
-      if (formData.syringe_count === 0 && !document.getElementById('syringe-count').value) {
-        requiredFields.push('จำนวน Syringe Disposable');
-      }
-      if (formData.needle_count === 0 && !document.getElementById('needle-count').value) {
-        requiredFields.push('จำนวนเข็มฉีดยา');
-      }
-      if (formData.iv_catheter_count === 0 && !document.getElementById('iv-catheter-count').value) {
-        requiredFields.push('จำนวน IV Catheter');
-      }
-      if (formData.nss_count === 0 && !document.getElementById('nss-count').value) {
-        requiredFields.push('จำนวน NSS');
-      }
-      if (formData.iv_set_count === 0 && !document.getElementById('iv-set-count').value) {
-        requiredFields.push('จำนวน Set IV');
-      }
-      if (formData.extension_tube_count === 0 && !document.getElementById('extension-tube-count').value) {
-        requiredFields.push('จำนวน Extension Tube');
-      }
-      if (formData.three_way_count === 0 && !document.getElementById('three-way-count').value) {
-        requiredFields.push('จำนวน Three-way');
-      }
-      if (formData.transpore_count === 0 && !document.getElementById('transpore-count').value) {
-        requiredFields.push('จำนวน Transpore');
-      }
-      if (formData.tourniquet_count === 0 && !document.getElementById('tourniquet-count').value) {
-        requiredFields.push('จำนวน Tourniquet');
-      }
-      if (formData.scissors_count === 0 && !document.getElementById('scissors-count').value) {
-        requiredFields.push('จำนวนกรรไกร');
-      }
-      
-      // ตรวจสอบ Radio Button ที่บังคับ
+      // ตรวจสอบ Radio Button ที่บังคับ - ตามโครงสร้างใหม่
       const requiredRadios = [
-        'kidney_bowl', 'gloves', 'masks', 'et_tube_child', 'ambu_bag_child', 
-        'oral_airway_child', 'clipboard', 'cpr_record', 'stethoscope',
-        'et_tube_adult', 'laryngoscope', 'guide_wire', 'oral_airway_adult',
-        'ky_jelly', 'suction_catheter', 'ambu_bag_adult', 'o2_mask', 'o2_tube', 'plaster'
+        // Floor 1
+        'syringe', 'extension_tube', 'iv_set', 'iv_catheter', 'needle', 'three_way',
+        'injection_plug', 'sterile_water', 'transpore', 'plaster_tube', 'scissors',
+        'tourniquet', 'alcohol', 'saw_blade',
+        // Floor 2
+        'laryngoscope', 'magill_force', 'guide_wire', 'ky_jelly', 'kidney_bowl', 'nss', 'd5w',
+        // Floor 3
+        'et_tube_a', 'et_tube_b', 'et_tube_c',
+        // Floor 4
+        'oral_airway_a', 'oral_airway_b', 'flashlight', 'glasses',
+        // Floor 5
+        'mask_a', 'mask_b', 'ambu_bag', 'o2_tube'
       ];
       
       requiredRadios.forEach(radioName => {
@@ -1626,9 +1633,9 @@
           </td>
           <td class="px-6 py-3 text-center">
             ${inspection.signature ? `
-              <img src="${inspection.signature}" alt="ลายเซ็น" class="w-16 h-8 mx-auto border border-gray-200 rounded bg-white object-contain">
+              <img src="${inspection.signature}" alt="เซ็นต์ชื่อ" class="w-16 h-8 mx-auto border border-gray-200 rounded bg-white object-contain">
             ` : `
-              <span class="text-gray-400 text-xs">ไม่มีลายเซ็น</span>
+              <span class="text-gray-400 text-xs">ไม่มีเซ็นต์ชื่อ</span>
             `}
           </td>
           <td class="px-6 py-3 text-center ${index === sortedInspections.length - 1 ? 'rounded-br-2xl' : ''}">
@@ -1811,7 +1818,7 @@
           <div class="bg-green-50 p-4 rounded-xl">
             <h4 class="font-bold text-green-800 mb-3">รายการยา</h4>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
-              ${['adrenaline', 'amiodarone', 'atropine', 'adenosine', 'calcium_gluconate', 'glucose', 'mgso4', 'nahco3', 'valium'].map(med => `
+              ${['adenosine', 'adrenaline', 'atropine', 'amiodarone', 'dopamine', 'calcium_gluconate', 'nahco3', 'glucose', 'mgso4', 'valium'].map(med => `
                 <div class="flex items-center justify-between p-2 bg-white rounded border">
                   <span class="text-sm">${getMedicineName(med)}</span>
                   <span class="${inspection[med] === '✓' ? 'text-green-600' : 'text-red-600'} font-bold">
@@ -1869,14 +1876,15 @@
     // Get medicine name in Thai
     function getMedicineName(key) {
       const names = {
-        'adrenaline': 'Adrenaline',
-        'amiodarone': 'Amiodarone',
-        'atropine': 'Atropine',
         'adenosine': 'Adenosine',
+        'adrenaline': 'Adrenaline',
+        'atropine': 'Atropine',
+        'amiodarone': 'Amiodarone',
+        'dopamine': 'Dopamine',
         'calcium_gluconate': '10% Calcium Gluconate',
+        'nahco3': '7.5% NaHCO3',
         'glucose': '50% Glucose',
         'mgso4': '50% MgSO4',
-        'nahco3': '7.5% NaHCO3',
         'valium': 'Valium'
       };
       return names[key] || key;
@@ -1885,25 +1893,43 @@
     // Get equipment status list
     function getEquipmentStatusList(inspection) {
       return [
-        { name: 'ชามรูปไต', status: inspection.kidney_bowl || '✗' },
-        { name: 'ถุงมือ', status: inspection.gloves || '✗' },
-        { name: 'Mask', status: inspection.masks || '✗' },
-        { name: 'ET-Tube เด็ก', status: inspection.et_tube_child || '✗' },
-        { name: 'Ambu bag เด็ก', status: inspection.ambu_bag_child || '✗' },
-        { name: 'Oral Airway เด็ก', status: inspection.oral_airway_child || '✗' },
-        { name: 'กระดานและปากกา', status: inspection.clipboard || '✗' },
-        { name: 'CPR record', status: inspection.cpr_record || '✗' },
-        { name: 'Stethoscope', status: inspection.stethoscope || '✗' },
-        { name: 'ET-Tube ผู้ใหญ่', status: inspection.et_tube_adult || '✗' },
+        // Floor 1
+        { name: 'Syringe', status: inspection.syringe || '✗' },
+        { name: 'Extension Tube', status: inspection.extension_tube || '✗' },
+        { name: 'IV Set', status: inspection.iv_set || '✗' },
+        { name: 'IV Catheter', status: inspection.iv_catheter || '✗' },
+        { name: 'Needle', status: inspection.needle || '✗' },
+        { name: 'Three-way', status: inspection.three_way || '✗' },
+        { name: 'Injection Plug', status: inspection.injection_plug || '✗' },
+        { name: 'Sterile Water', status: inspection.sterile_water || '✗' },
+        { name: 'Transpore', status: inspection.transpore || '✗' },
+        { name: 'Plaster Tube', status: inspection.plaster_tube || '✗' },
+        { name: 'Scissors', status: inspection.scissors || '✗' },
+        { name: 'Tourniquet', status: inspection.tourniquet || '✗' },
+        { name: 'Alcohol', status: inspection.alcohol || '✗' },
+        { name: 'Saw Blade', status: inspection.saw_blade || '✗' },
+        // Floor 2
         { name: 'Laryngoscope', status: inspection.laryngoscope || '✗' },
-        { name: 'Guide wire', status: inspection.guide_wire || '✗' },
-        { name: 'Oral Airway ผู้ใหญ่', status: inspection.oral_airway_adult || '✗' },
+        { name: 'Magill Force', status: inspection.magill_force || '✗' },
+        { name: 'Guide Wire', status: inspection.guide_wire || '✗' },
         { name: 'K-Y Jelly', status: inspection.ky_jelly || '✗' },
-        { name: 'สาย Suction', status: inspection.suction_catheter || '✗' },
-        { name: 'Ambu bag ผู้ใหญ่', status: inspection.ambu_bag_adult || '✗' },
-        { name: 'O2 Mask', status: inspection.o2_mask || '✗' },
-        { name: 'สายต่อออกซิเจน', status: inspection.o2_tube || '✗' },
-        { name: 'พลาสเตอร์', status: inspection.plaster || '✗' }
+        { name: 'Kidney Bowl', status: inspection.kidney_bowl || '✗' },
+        { name: 'NSS', status: inspection.nss || '✗' },
+        { name: 'D5W', status: inspection.d5w || '✗' },
+        // Floor 3
+        { name: 'ET-Tube A', status: inspection.et_tube_a || '✗' },
+        { name: 'ET-Tube B', status: inspection.et_tube_b || '✗' },
+        { name: 'ET-Tube C', status: inspection.et_tube_c || '✗' },
+        // Floor 4
+        { name: 'Oral Airway A', status: inspection.oral_airway_a || '✗' },
+        { name: 'Oral Airway B', status: inspection.oral_airway_b || '✗' },
+        { name: 'Flashlight', status: inspection.flashlight || '✗' },
+        { name: 'Glasses', status: inspection.glasses || '✗' },
+        // Floor 5
+        { name: 'Mask A', status: inspection.mask_a || '✗' },
+        { name: 'Mask B', status: inspection.mask_b || '✗' },
+        { name: 'Ambu Bag', status: inspection.ambu_bag || '✗' },
+        { name: 'O2 Tube', status: inspection.o2_tube || '✗' }
       ];
     }
 
@@ -1955,8 +1981,8 @@
         if (inspection.box_type === 'มี Box ยา') {
           medicineChecklist.classList.remove('hidden');
           
-          // Set medicine values
-          ['adrenaline', 'amiodarone', 'atropine', 'adenosine', 'calcium_gluconate', 'glucose', 'mgso4', 'nahco3', 'valium'].forEach(med => {
+          // Set medicine values - ตามลำดับใหม่
+          ['adenosine', 'adrenaline', 'atropine', 'amiodarone', 'dopamine', 'calcium_gluconate', 'nahco3', 'glucose', 'mgso4', 'valium'].forEach(med => {
             const radio = document.querySelector(`input[name="${med}"][value="${inspection[med]}"]`);
             if (radio) radio.checked = true;
           });
@@ -1965,23 +1991,20 @@
         }
       }
       
-      // Set equipment counts
-      document.getElementById('syringe-count').value = inspection.syringe_count || '';
-      document.getElementById('needle-count').value = inspection.needle_count || '';
-      document.getElementById('iv-catheter-count').value = inspection.iv_catheter_count || '';
-      document.getElementById('nss-count').value = inspection.nss_count || '';
-      document.getElementById('iv-set-count').value = inspection.iv_set_count || '';
-      document.getElementById('extension-tube-count').value = inspection.extension_tube_count || '';
-      document.getElementById('three-way-count').value = inspection.three_way_count || '';
-      document.getElementById('transpore-count').value = inspection.transpore_count || '';
-      document.getElementById('tourniquet-count').value = inspection.tourniquet_count || '';
-      document.getElementById('scissors-count').value = inspection.scissors_count || '';
-      
-      // Set equipment status
+      // Set equipment status - ตามโครงสร้างใหม่
       const equipmentFields = [
-        'kidney_bowl', 'gloves', 'masks', 'et_tube_child', 'ambu_bag_child', 'oral_airway_child',
-        'clipboard', 'cpr_record', 'stethoscope', 'et_tube_adult', 'laryngoscope', 'guide_wire',
-        'oral_airway_adult', 'ky_jelly', 'suction_catheter', 'ambu_bag_adult', 'o2_mask', 'o2_tube', 'plaster'
+        // Floor 1
+        'syringe', 'extension_tube', 'iv_set', 'iv_catheter', 'needle', 'three_way',
+        'injection_plug', 'sterile_water', 'transpore', 'plaster_tube', 'scissors',
+        'tourniquet', 'alcohol', 'saw_blade',
+        // Floor 2
+        'laryngoscope', 'magill_force', 'guide_wire', 'ky_jelly', 'kidney_bowl', 'nss', 'd5w',
+        // Floor 3
+        'et_tube_a', 'et_tube_b', 'et_tube_c',
+        // Floor 4
+        'oral_airway_a', 'oral_airway_b', 'flashlight', 'glasses',
+        // Floor 5
+        'mask_a', 'mask_b', 'ambu_bag', 'o2_tube'
       ];
       
       equipmentFields.forEach(field => {
@@ -2077,69 +2100,69 @@
       const medicineTypeRadio = document.querySelector('input[name="medicineType"]:checked');
       formData.box_type = medicineTypeRadio ? medicineTypeRadio.value : '';
       
-      // Medicine checklist (F-N columns)
-      if (formData.box_type === 'มี Box ยา') {
-        const getRadioValue = (name) => {
-          const radio = document.querySelector(`input[name="${name}"]:checked`);
-          return radio ? radio.value : '';
-        };
-        
-        formData.adrenaline = getRadioValue('adrenaline');
-        formData.amiodarone = getRadioValue('amiodarone');
-        formData.atropine = getRadioValue('atropine');
-        formData.adenosine = getRadioValue('adenosine');
-        formData.calcium_gluconate = getRadioValue('calcium_gluconate');
-        formData.glucose = getRadioValue('glucose');
-        formData.mgso4 = getRadioValue('mgso4');
-        formData.nahco3 = getRadioValue('nahco3');
-        formData.valium = getRadioValue('valium');
-      }
-      
-      // Equipment counts (O-P columns)
-      formData.syringe_count = parseInt(document.getElementById('syringe-count').value) || 0;
-      formData.needle_count = parseInt(document.getElementById('needle-count').value) || 0;
-      
-      // Floor 2 equipment (R-Y columns)
-      formData.iv_catheter_count = parseInt(document.getElementById('iv-catheter-count').value) || 0;
-      formData.nss_count = parseInt(document.getElementById('nss-count').value) || 0;
-      formData.iv_set_count = parseInt(document.getElementById('iv-set-count').value) || 0;
-      formData.extension_tube_count = parseInt(document.getElementById('extension-tube-count').value) || 0;
-      formData.three_way_count = parseInt(document.getElementById('three-way-count').value) || 0;
-      formData.transpore_count = parseInt(document.getElementById('transpore-count').value) || 0;
-      formData.tourniquet_count = parseInt(document.getElementById('tourniquet-count').value) || 0;
-      formData.scissors_count = parseInt(document.getElementById('scissors-count').value) || 0;
-      
-      // Floor 2 radio buttons
+      // Helper function to get radio value
       const getRadioValue = (name) => {
         const radio = document.querySelector(`input[name="${name}"]:checked`);
         return radio ? radio.value : '';
       };
       
-      formData.kidney_bowl = getRadioValue('kidney_bowl');
-      formData.gloves = getRadioValue('gloves');
-      formData.masks = getRadioValue('masks');
+      // Medicine checklist - ตามลำดับใหม่
+      if (formData.box_type === 'มี Box ยา') {
+        formData.adenosine = getRadioValue('adenosine');
+        formData.adrenaline = getRadioValue('adrenaline');
+        formData.atropine = getRadioValue('atropine');
+        formData.amiodarone = getRadioValue('amiodarone');
+        formData.dopamine = getRadioValue('dopamine');
+        formData.calcium_gluconate = getRadioValue('calcium_gluconate');
+        formData.nahco3 = getRadioValue('nahco3');
+        formData.glucose = getRadioValue('glucose');
+        formData.mgso4 = getRadioValue('mgso4');
+        formData.valium = getRadioValue('valium');
+      }
       
-      // Floor 3 radio buttons
-      formData.et_tube_child = getRadioValue('et_tube_child');
-      formData.ambu_bag_child = getRadioValue('ambu_bag_child');
-      formData.oral_airway_child = getRadioValue('oral_airway_child');
-      formData.clipboard = getRadioValue('clipboard');
-      formData.cpr_record = getRadioValue('cpr_record');
-      formData.stethoscope = getRadioValue('stethoscope');
+      // Floor 1 equipment - ตามลำดับใหม่
+      formData.syringe = getRadioValue('syringe');
+      formData.extension_tube = getRadioValue('extension_tube');
+      formData.iv_set = getRadioValue('iv_set');
+      formData.iv_catheter = getRadioValue('iv_catheter');
+      formData.needle = getRadioValue('needle');
+      formData.three_way = getRadioValue('three_way');
+      formData.injection_plug = getRadioValue('injection_plug');
+      formData.sterile_water = getRadioValue('sterile_water');
+      formData.transpore = getRadioValue('transpore');
+      formData.plaster_tube = getRadioValue('plaster_tube');
+      formData.scissors = getRadioValue('scissors');
+      formData.tourniquet = getRadioValue('tourniquet');
+      formData.alcohol = getRadioValue('alcohol');
+      formData.saw_blade = getRadioValue('saw_blade');
       
-      // Floor 4 radio buttons
-      formData.et_tube_adult = getRadioValue('et_tube_adult');
+      // Floor 2 equipment - ตามลำดับใหม่
       formData.laryngoscope = getRadioValue('laryngoscope');
+      formData.magill_force = getRadioValue('magill_force');
       formData.guide_wire = getRadioValue('guide_wire');
-      formData.oral_airway_adult = getRadioValue('oral_airway_adult');
       formData.ky_jelly = getRadioValue('ky_jelly');
-      formData.suction_catheter = getRadioValue('suction_catheter');
-      formData.ambu_bag_adult = getRadioValue('ambu_bag_adult');
-      formData.o2_mask = getRadioValue('o2_mask');
-      formData.o2_tube = getRadioValue('o2_tube');
-      formData.plaster = getRadioValue('plaster');
+      formData.kidney_bowl = getRadioValue('kidney_bowl');
+      formData.nss = getRadioValue('nss');
+      formData.d5w = getRadioValue('d5w');
       
-      // Inspector info (AT-AU columns)
+      // Floor 3 equipment - ตามลำดับใหม่
+      formData.et_tube_a = getRadioValue('et_tube_a');
+      formData.et_tube_b = getRadioValue('et_tube_b');
+      formData.et_tube_c = getRadioValue('et_tube_c');
+      
+      // Floor 4 equipment - ตามลำดับใหม่
+      formData.oral_airway_a = getRadioValue('oral_airway_a');
+      formData.oral_airway_b = getRadioValue('oral_airway_b');
+      formData.flashlight = getRadioValue('flashlight');
+      formData.glasses = getRadioValue('glasses');
+      
+      // Floor 5 equipment - ตามลำดับใหม่
+      formData.mask_a = getRadioValue('mask_a');
+      formData.mask_b = getRadioValue('mask_b');
+      formData.ambu_bag = getRadioValue('ambu_bag');
+      formData.o2_tube = getRadioValue('o2_tube');
+      
+      // Inspector info
       formData.inspector = document.getElementById('inspector').value;
       formData.signature = getSignatureDataURL();
       
@@ -2269,5 +2292,5 @@
       });
     }
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99bb6c79b07545cf',t:'MTc2MjY3MTUyOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99bbe01f44c84b9a',t:'MTc2MjY3NjI2NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
