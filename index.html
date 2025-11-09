@@ -324,24 +324,26 @@
       </div>
      </div>
     </div>
-    <div class="p-6">
-     <div class="overflow-x-auto">
-      <table class="w-full bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
-       <thead class="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white">
+    <!-- ตารางที่ปรับให้แถว/หัวตารางเตี้ยลง ฟอนต์เล็ก mobile-friendly และ Header Responsive -->
+<div class="p-3 sm:p-6">
+  <div class="overflow-x-auto">
+    <table class="w-full min-w-[430px] table-fixed text-xs sm:text-sm bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+      <thead class="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white text-xs sm:text-sm">
         <tr>
-         <th class="px-6 py-3 text-center font-semibold rounded-tl-2xl">วันที่</th>
-         <th class="px-6 py-3 text-center font-semibold">เวร</th>
-         <th class="px-6 py-3 text-center font-semibold">ID</th>
-         <th class="px-6 py-3 text-center font-semibold">ผู้ตรวจสอบ</th>
-         <th class="px-6 py-3 text-center font-semibold">เซ็นต์ชื่อ</th>
-         <th class="px-6 py-3 text-center font-semibold rounded-tr-2xl">จัดการ</th>
+          <th class="px-1 py-1 sm:px-2 sm:py-1 text-center font-semibold rounded-tl-2xl whitespace-nowrap">วันที่</th>
+          <th class="px-1 py-1 sm:px-2 sm:py-1 text-center font-semibold whitespace-nowrap">เวร</th>
+          <th class="px-1 py-1 sm:px-2 sm:py-1 text-center font-semibold whitespace-nowrap">ID</th>
+          <th class="px-1 py-1 sm:px-2 sm:py-1 text-center font-semibold whitespace-nowrap">ผู้ตรวจสอบ</th>
+          <th class="px-1 py-1 sm:px-2 sm:py-1 text-center font-semibold whitespace-nowrap">เซ็นต์ชื่อ</th>
+          <th class="px-1 py-1 sm:px-2 sm:py-1 text-center font-semibold rounded-tr-2xl whitespace-nowrap">จัดการ</th>
         </tr>
-       </thead>
-       <tbody id="inspection-table-body" class="divide-y divide-gray-100"><!-- Inspection records will be inserted here -->
-       </tbody>
-      </table>
-     </div>
-    </div>
+      </thead>
+      <tbody id="inspection-table-body" class="divide-y divide-gray-100 text-xs sm:text-sm">
+        <!-- Inspection records will be inserted here -->
+      </tbody>
+    </table>
+  </div>
+</div>
     <div id="inspection-empty-state" class="text-center py-12 text-gray-400 hidden">
      <svg class="w-16 h-16 mx-auto mb-4 opacity-50" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
      </svg>
