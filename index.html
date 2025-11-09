@@ -324,27 +324,24 @@
       </div>
      </div>
     </div>
-<!-- ตารางตรวจสอบรถ Emergency -->
-<div class="bg-white rounded-2xl shadow-lg overflow-hidden mt-6">
-  <div class="w-screen relative left-1/2 right-1/2 -mx-[50vw]">
-    <div class="p-6">
-      <div class="overflow-x-auto">
-        <table class="min-w-full bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100">
-          <thead class="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white">
-            <tr>
-              <th class="px-6 py-3 text-center font-semibold rounded-tl-2xl">เวร</th>
-              <th class="px-6 py-3 text-center font-semibold">ID</th>
-              <th class="px-6 py-3 text-center font-semibold">ผู้ตรวจสอบ</th>
-              <th class="px-6 py-3 text-center font-semibold">เซ็นต์ชื่อ</th>
-              <th class="px-6 py-3 text-center font-semibold rounded-tr-2xl">จัดการ</th>
-            </tr>
-          </thead>
-          <tbody id="inspection-table-body" class="divide-y divide-gray-100"></tbody>
-        </table>
-      </div>
+<div class="p-6">
+     <div class="overflow-x-auto">
+      <table class="w-full bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+       <thead class="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white">
+        <tr>
+         <th class="px-6 py-3 text-center font-semibold rounded-tl-2xl">วันที่</th>
+         <th class="px-6 py-3 text-center font-semibold">เวร</th>
+         <th class="px-6 py-3 text-center font-semibold">ID</th>
+         <th class="px-6 py-3 text-center font-semibold">ผู้ตรวจสอบ</th>
+         <th class="px-6 py-3 text-center font-semibold">เซ็นต์ชื่อ</th>
+         <th class="px-6 py-3 text-center font-semibold rounded-tr-2xl">จัดการ</th>
+        </tr>
+       </thead>
+       <tbody id="inspection-table-body" class="divide-y divide-gray-100"><!-- Inspection records will be inserted here -->
+       </tbody>
+      </table>
+     </div>
     </div>
-  </div>
-</div>
     <div id="inspection-empty-state" class="text-center py-12 text-gray-400 hidden">
      <svg class="w-16 h-16 mx-auto mb-4 opacity-50" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
      </svg>
