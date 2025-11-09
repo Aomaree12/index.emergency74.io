@@ -23,6 +23,38 @@
     }
   </style>
   <style>@view-transition { navigation: auto; }</style>
+  <style>
+  /* สำหรับหน้าจอมือถือ: ปรับขนาดหัวตารางและแถวให้เล็กลง */
+  @media (max-width: 640px) {
+    /* ลด padding ของหัวตารางลงครึ่งหนึ่ง */
+    table thead th {
+      padding-top: 0.4rem !important;  /* เดิมประมาณ 0.8rem */
+      padding-bottom: 0.4rem !important;
+      font-size: 0.75rem !important;   /* ลดขนาดตัวอักษรนิดหน่อย */
+    }
+
+    /* ลดความสูงของแถวข้อมูล (¾ ของขนาดเดิม) */
+    table tbody td {
+      padding-top: 0.5rem !important;  /* เดิม ~0.75rem */
+      padding-bottom: 0.5rem !important;
+      font-size: 0.8rem !important;    /* ลดขนาดฟอนต์ให้สมดุล */
+    }
+
+    /* ลด margin/padding ของ container ตารางเล็กน้อย */
+    .p-6 {
+      padding: 1rem !important;
+    }
+
+    /* ปรับปุ่มและหัวเรื่องให้ขนาดเหมาะกับจอเล็ก */
+    #add-medicine-btn {
+      padding: 0.4rem 0.8rem !important;
+      font-size: 0.8rem !important;
+    }
+    h2.text-xl {
+      font-size: 1rem !important;
+    }
+  }
+</style>
   <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
  </head>
  <body class="bg-gradient-to-br from-emerald-50 to-teal-50 min-h-full">
