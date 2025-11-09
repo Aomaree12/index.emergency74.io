@@ -1684,13 +1684,18 @@
             <span class="font-mono text-sm text-gray-600">${inspection.id || ''}</span>
           </td>
           <td class="px-6 py-3 text-center">
-            <div class="flex flex-col items-center">
-              <span class="text-gray-800">${inspection.inspector || ''}</span>
-              <span class="text-xs text-blue-600 font-semibold bg-blue-100 px-2 py-1 rounded-full mt-1">
-                ครั้งที่ ${getInspectorCount(inspection.inspector, inspection.date, sortedInspections)}
-              </span>
-            </div>
-          </td>
+  <div class="flex flex-col items-center max-w-[120px] sm:max-w-none">
+    <span
+      class="text-gray-800 truncate w-full sm:w-auto whitespace-nowrap overflow-hidden"
+      title="${inspection.inspector || ''}"
+    >
+      ${inspection.inspector || ''}
+    </span>
+    <span class="text-xs text-blue-600 font-semibold bg-blue-100 px-2 py-1 rounded-full mt-1">
+      ครั้งที่ ${getInspectorCount(inspection.inspector, inspection.date, sortedInspections)}
+    </span>
+  </div>
+</td>
           <td class="px-6 py-3 text-center">
             ${inspection.signature ? `
               <img src="${inspection.signature}" alt="เซ็นต์ชื่อ" class="w-16 h-8 mx-auto border border-gray-200 rounded bg-white object-contain">
