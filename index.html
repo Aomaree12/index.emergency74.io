@@ -387,15 +387,17 @@
       </div>
      </div>
     </div>
-<div class="p-4 sm:p-6">
+<div class="p-6">
   <div class="overflow-x-auto">
-    <table class="table-auto bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 mx-auto text-sm sm:text-base">
+    <table class="table-auto bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 mx-auto">
       <thead class="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white">
         <tr>
-          <th class="px-2 sm:px-4 md:px-6 py-2 sm:py-3 text-center font-semibold whitespace-nowrap rounded-tl-2xl">เวร</th>
-          <th class="px-2 sm:px-4 md:px-6 py-2 sm:py-3 text-center font-semibold whitespace-nowrap">ผู้ตรวจสอบ</th>
-          <th class="px-2 sm:px-4 md:px-6 py-2 sm:py-3 text-center font-semibold whitespace-nowrap w-[100px] sm:w-[120px]">เซ็นต์ชื่อ</th>
-          <th class="px-2 sm:px-4 md:px-6 py-2 sm:py-3 text-center font-semibold whitespace-nowrap rounded-tr-2xl">จัดการ</th>
+          <th class="px-4 py-3 text-center font-semibold whitespace-nowrap rounded-tl-2xl">วันที่</th>
+          <th class="px-4 py-3 text-center font-semibold whitespace-nowrap">เวร</th>
+          <th class="px-4 py-3 text-center font-semibold whitespace-nowrap">ผู้ตรวจสอบ</th>
+          <!-- 👇 เพิ่ม w-[120px] เพื่อให้คอลัมน์เซ็นต์ชื่อมีขนาดคงที่ -->
+          <th class="px-4 py-3 text-center font-semibold whitespace-nowrap w-[120px]">เซ็นต์ชื่อ</th>
+          <th class="px-4 py-3 text-center font-semibold whitespace-nowrap rounded-tr-2xl">จัดการ</th>
         </tr>
       </thead>
       <tbody id="inspection-table-body" class="divide-y divide-gray-100">
