@@ -1892,31 +1892,7 @@
               `).join('')}
             </div>
           </div>
-          ` : ''}
-
-          <!-- Equipment Counts -->
-          <div class="bg-yellow-50 p-4 rounded-xl">
-            <h4 class="font-bold text-yellow-800 mb-3">จำนวนอุปกรณ์</h4>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-              <div class="p-2 bg-white rounded border">
-                <p class="text-xs text-gray-600">Syringe</p>
-                <p class="font-bold">${inspection.syringe_count || 0}</p>
-              </div>
-              <div class="p-2 bg-white rounded border">
-                <p class="text-xs text-gray-600">เข็มฉีดยา</p>
-                <p class="font-bold">${inspection.needle_count || 0}</p>
-              </div>
-              <div class="p-2 bg-white rounded border">
-                <p class="text-xs text-gray-600">IV Catheter</p>
-                <p class="font-bold">${inspection.iv_catheter_count || 0}</p>
-              </div>
-              <div class="p-2 bg-white rounded border">
-                <p class="text-xs text-gray-600">NSS</p>
-                <p class="font-bold">${inspection.nss_count || 0}</p>
-              </div>
-            </div>
-          </div>
-
+          ` : ''}       
           <!-- Equipment Status -->
           <div class="bg-purple-50 p-4 rounded-xl">
             <h4 class="font-bold text-purple-800 mb-3">สถานะอุปกรณ์</h4>
