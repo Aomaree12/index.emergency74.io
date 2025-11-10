@@ -56,20 +56,6 @@
   }
 </style>
   <style>
-@media (max-width: 640px) {
-  table th, table td {
-    padding-top: 0.35rem !important;
-    padding-bottom: 0.35rem !important;
-  }
-  table th {
-    font-size: 0.75rem !important;
-  }
-  table td {
-    font-size: 0.8rem !important;
-  }
-}
-</style>
-  <style>
   @media (max-width: 640px) {
     #submit-inspection {
       width: 100%;
@@ -130,25 +116,17 @@
   </div>
 </div>
     <div class="p-6">
-  <div class="overflow-x-auto">
-    <table class="w-full bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 table-fixed">
-      <thead class="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white">
+     <div class="overflow-x-auto">
+      <table class="w-full bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+       <thead class="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white">
         <tr>
-          <th class="px-3 py-2 text-left font-semibold rounded-tl-2xl w-[40%] text-sm sm:text-base">
-            💊 ยา/เวชภัณฑ์
-          </th>
-          <th class="px-2 py-2 text-center font-semibold w-[15%] text-sm sm:text-base">
-            ⏰ วันที่เหลือ
-          </th>
-          <th class="px-2 py-2 text-center font-semibold w-[25%] text-sm sm:text-base">
-            🏷️ สถานะ
-          </th>
-          <th class="px-2 py-2 text-center font-semibold rounded-tr-2xl w-[20%] text-sm sm:text-base">
-            ⚙️ การจัดการ
-          </th>
+         <th class="px-6 py-3 text-left font-semibold rounded-tl-2xl">ยา/เวชภัณฑ์</th>
+         <th class="px-6 py-3 text-center font-semibold">⏰ วันที่เหลือ</th>
+         <th class="px-6 py-3 text-center font-semibold">🏷️ สถานะ</th>
+         <th class="px-6 py-3 text-center font-semibold rounded-tr-2xl">⚙️ การจัดการ</th>
         </tr>
-      </thead>
-      <tbody id="medicine-table-body" class="divide-y divide-gray-100 text-sm sm:text-base">
+       </thead>
+       <tbody id="medicine-table-body" class="divide-y divide-gray-100"><!-- Items will be inserted here -->
        </tbody>
       </table>
      </div>
@@ -409,20 +387,20 @@
       </div>
      </div>
     </div>
-<div class="p-6">
-  <div class="overflow-x-auto">
-    <table class="table-auto bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 mx-auto">
-      <thead class="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white">
+    <div class="p-6">
+     <div class="overflow-x-auto">
+      <table class="w-full bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+       <thead class="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white">
         <tr>
-          <th class="px-4 py-3 text-center font-semibold whitespace-nowrap rounded-tl-2xl">วันที่</th>
-          <th class="px-4 py-3 text-center font-semibold whitespace-nowrap">เวร</th>
-          <th class="px-4 py-3 text-center font-semibold whitespace-nowrap">ผู้ตรวจสอบ</th>
-          <!-- 👇 เพิ่ม w-[120px] เพื่อให้คอลัมน์เซ็นต์ชื่อมีขนาดคงที่ -->
-          <th class="px-4 py-3 text-center font-semibold whitespace-nowrap w-[120px]">เซ็นต์ชื่อ</th>
-          <th class="px-4 py-3 text-center font-semibold whitespace-nowrap rounded-tr-2xl">จัดการ</th>
+         <th class="px-6 py-3 text-center font-semibold rounded-tl-2xl">วันที่</th>
+         <th class="px-6 py-3 text-center font-semibold">เวร</th>
+         <th class="px-6 py-3 text-center font-semibold">ID</th>
+         <th class="px-6 py-3 text-center font-semibold">ผู้ตรวจสอบ</th>
+         <th class="px-6 py-3 text-center font-semibold">เซ็นต์ชื่อ</th>
+         <th class="px-6 py-3 text-center font-semibold rounded-tr-2xl">จัดการ</th>
         </tr>
-      </thead>
-      <tbody id="inspection-table-body" class="divide-y divide-gray-100">
+       </thead>
+       <tbody id="inspection-table-body" class="divide-y divide-gray-100"><!-- Inspection records will be inserted here -->
        </tbody>
       </table>
      </div>
@@ -1675,7 +1653,7 @@
       }
     }
 
-   // Render inspection table
+    // Render inspection table
     function renderInspectionTable(inspections) {
       const tableBody = document.getElementById('inspection-table-body');
       const emptyState = document.getElementById('inspection-empty-state');
@@ -1706,18 +1684,16 @@
             </span>
           </td>
           <td class="px-6 py-3 text-center">
-  <div class="flex flex-col items-center max-w-[120px] sm:max-w-none">
-    <span
-      class="text-gray-800 truncate w-full sm:w-auto whitespace-nowrap overflow-hidden"
-      title="${inspection.inspector || ''}"
-    >
-      ${inspection.inspector || ''}
-    </span>
-    <span class="text-xs text-blue-600 font-semibold bg-blue-100 px-2 py-1 rounded-full mt-1">
-      ครั้งที่ ${getInspectorCount(inspection.inspector, inspection.date, sortedInspections)}
-    </span>
-  </div>
-</td>
+            <span class="font-mono text-sm text-gray-600">${inspection.id || ''}</span>
+          </td>
+          <td class="px-6 py-3 text-center">
+            <div class="flex flex-col items-center">
+              <span class="text-gray-800">${inspection.inspector || ''}</span>
+              <span class="text-xs text-blue-600 font-semibold bg-blue-100 px-2 py-1 rounded-full mt-1">
+                ครั้งที่ ${getInspectorCount(inspection.inspector, inspection.date, sortedInspections)}
+              </span>
+            </div>
+          </td>
           <td class="px-6 py-3 text-center">
             ${inspection.signature ? `
               <img src="${inspection.signature}" alt="เซ็นต์ชื่อ" class="w-16 h-8 mx-auto border border-gray-200 rounded bg-white object-contain">
@@ -1747,6 +1723,7 @@
           </td>
         </tr>
       `).join('');
+      
       // Add event listeners
       document.querySelectorAll('.view-inspection-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
@@ -1914,7 +1891,31 @@
               `).join('')}
             </div>
           </div>
-          ` : ''}       
+          ` : ''}
+
+          <!-- Equipment Counts -->
+          <div class="bg-yellow-50 p-4 rounded-xl">
+            <h4 class="font-bold text-yellow-800 mb-3">จำนวนอุปกรณ์</h4>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+              <div class="p-2 bg-white rounded border">
+                <p class="text-xs text-gray-600">Syringe</p>
+                <p class="font-bold">${inspection.syringe_count || 0}</p>
+              </div>
+              <div class="p-2 bg-white rounded border">
+                <p class="text-xs text-gray-600">เข็มฉีดยา</p>
+                <p class="font-bold">${inspection.needle_count || 0}</p>
+              </div>
+              <div class="p-2 bg-white rounded border">
+                <p class="text-xs text-gray-600">IV Catheter</p>
+                <p class="font-bold">${inspection.iv_catheter_count || 0}</p>
+              </div>
+              <div class="p-2 bg-white rounded border">
+                <p class="text-xs text-gray-600">NSS</p>
+                <p class="font-bold">${inspection.nss_count || 0}</p>
+              </div>
+            </div>
+          </div>
+
           <!-- Equipment Status -->
           <div class="bg-purple-50 p-4 rounded-xl">
             <h4 class="font-bold text-purple-800 mb-3">สถานะอุปกรณ์</h4>
